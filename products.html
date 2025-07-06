@@ -533,14 +533,30 @@
             }
           }
         });
+        // Hamburger menu for mobile navigation
+        const menu = document.getElementById('menu');
+        const nav = document.querySelector('nav');
+        if (menu && nav) {
+          menu.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            menu.setAttribute('aria-expanded', nav.classList.contains('active'));
+          });
+          menu.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              nav.classList.toggle('active');
+              menu.setAttribute('aria-expanded', nav.classList.contains('active'));
+            }
+          });
+        }
       });
     </script>
     <style>
-      /* Responsive Table for Mobile */
+      /* Responsive Table for Mobile - Improved to prevent overlap */
       @media (max-width: 700px) {
         .responsive-table, .responsive-table thead, .responsive-table tbody, .responsive-table tr, .responsive-table th, .responsive-table td {
           display: block;
           width: 100%;
+          box-sizing: border-box;
         }
         .responsive-table thead {
           display: none;
@@ -550,12 +566,17 @@
           background: #fff;
           border-radius: 1em;
           box-shadow: 0 2px 8px rgba(21,101,192,0.07);
-          padding: 1em 0.7em;
+          padding: 0.7em 0.5em;
+          overflow: hidden;
         }
         .responsive-table td {
           text-align: left;
-          padding: 0.7em 1em;
+          padding: 0.7em 0.7em 0.7em 1em;
           position: relative;
+          min-height: 2.5em;
+          word-break: break-word;
+          white-space: pre-line;
+          font-size: 1em;
         }
         .responsive-table td:before {
           content: attr(data-label);
@@ -564,6 +585,89 @@
           display: block;
           margin-bottom: 0.3em;
           font-size: 0.98em;
+          white-space: normal;
+        }
+        .responsive-table td.price-cell {
+          font-size: 1.1em;
+          color: #1565c0;
+          font-weight: bold;
+        }
+        .responsive-table td.category-cell {
+          font-size: 1em;
+          font-weight: bold;
+        }
+      }
+      @media (max-width: 480px) {
+        .responsive-table tr {
+          padding: 0.4em 0.2em;
+        }
+        .responsive-table td {
+          padding: 0.5em 0.3em 0.5em 0.8em;
+          font-size: 0.97em;
+        }
+        .responsive-table td:before {
+          font-size: 0.93em;
+        }
+      }
+      /* Responsive Navigation Bar */
+      .menu {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        z-index: 1001;
+      }
+      .menu .line {
+        width: 28px;
+        height: 3px;
+        background: #1565c0;
+        margin: 4px 0;
+        border-radius: 2px;
+        transition: all 0.3s;
+      }
+      @media (max-width: 900px) {
+        nav {
+          position: fixed;
+          top: 0;
+          right: -100vw;
+          width: 70vw;
+          max-width: 320px;
+          height: 100vh;
+          background: #fff;
+          box-shadow: 0 2px 16px rgba(21,101,192,0.10);
+          transition: right 0.35s cubic-bezier(.4,0,.2,1);
+          z-index: 1000;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          padding: 2.5em 1.5em 1.5em 1.5em;
+        }
+        nav.active {
+          right: 0;
+        }
+        .nav-links {
+          flex-direction: column;
+          gap: 1.2em;
+          width: 100%;
+        }
+        .menu {
+          display: flex;
+        }
+        .header-section {
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+      @media (max-width: 600px) {
+        nav {
+          width: 90vw;
+          max-width: 98vw;
+          padding: 2em 0.7em 1em 0.7em;
         }
       }
     </style>
