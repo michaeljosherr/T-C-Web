@@ -10,6 +10,46 @@
   <style>
     body { background: #f7fbff; }
     .contact-section-content { max-width:500px;margin:3em auto 2em auto;padding:2em 1em 2.5em 1em;background:#f7fbff;border-radius:1.5em;box-shadow:0 2px 16px rgba(21,101,192,0.07); }
+    /* Responsive About/Contact Layout */
+    @media (max-width: 900px) {
+      .container.flex-about-contact {
+        flex-direction: column !important;
+        gap: 1.5em !important;
+        align-items: stretch !important;
+      }
+      .about-section, .contact-section {
+        max-width: 98vw !important;
+        min-width: 0 !important;
+        margin: 0 auto 1.2em auto !important;
+        padding: 1.2em 0.7em 1.2em 0.7em !important;
+        border-radius: 1.2em !important;
+      }
+      .location-section {
+        padding: 1.2em 0 0 0 !important;
+      }
+      .map-container iframe {
+        width: 100% !important;
+        min-width: 0 !important;
+        height: 260px !important;
+        border-radius: 1em !important;
+      }
+    }
+    @media (max-width: 600px) {
+      .about-section, .contact-section {
+        padding: 0.7em 0.2em 0.7em 0.2em !important;
+        border-radius: 0.7em !important;
+      }
+      .location-section {
+        padding: 0.7em 0 0 0 !important;
+      }
+      .map-container iframe {
+        height: 180px !important;
+        border-radius: 0.7em !important;
+      }
+      .about-section h2, .contact-section h2 {
+        font-size: 1.3em !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -34,7 +74,7 @@
   </div>
 </header>
   <main>
-    <div class="container" style="display: flex; flex-wrap: wrap; gap: 2.5em; justify-content: center; align-items: stretch; margin: 2.5em auto 2em auto; max-width: 1100px;">
+    <div class="container flex-about-contact" style="display: flex; flex-wrap: wrap; gap: 2.5em; justify-content: center; align-items: stretch; margin: 2.5em auto 2em auto; max-width: 1100px;">
       <section class="about-section" style="flex:1 1 380px; min-width:320px; max-width:500px; display:flex; flex-direction:column; justify-content:space-between; background:linear-gradient(120deg,#fffde7 60%,#e3f2fd 100%); border-radius:2em; box-shadow:0 8px 32px rgba(21,101,192,0.10), 0 1.5px 8px rgba(239,108,0,0.06); position:relative; overflow:visible; padding:2.5em 2em 2em 2em;">
         <div style="position:absolute;top:-30px;right:-30px;opacity:0.10;font-size:7em;pointer-events:none;z-index:0;">
           <i class="fa-solid fa-user-tie"></i>
@@ -45,7 +85,6 @@
           </div>
           <div>
             <h2 style="margin:0;color:#1565c0;font-size:2em;font-weight:900;letter-spacing:-1px;">About Us</h2>
-            <div style="color:#ef6c00;font-weight:600;font-size:1.08em;">Snacks & Beverages Specialist</div>
           </div>
         </div>
         <div style="z-index:1;position:relative;flex:1;display:flex;flex-direction:column;justify-content:space-between;">

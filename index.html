@@ -23,12 +23,12 @@
     <div aria-details="logo" class="logo">
       <a href="index.html"><img src="img/enhanced-tc-logo__1_-removebg-preview.png" alt="T&C Logo"></a>
     </div>
-    <div class="menu" id="menu">
+    <div class="menu" id="menu" tabindex="0" aria-label="Open navigation menu" aria-expanded="false">
       <span class="line"></span>
       <span class="line"></span>
       <span class="line"></span>
     </div>
-    <nav>
+    <nav id="mainNav">
       <ul class="nav-links">
         <li class="active"><a href="#home">Home</a></li>
         <li><a href="products.html">Products</a></li>
@@ -250,6 +250,19 @@
     <!-- main js -->
     <script src="script.js"></script>
     <script>
+      // Hamburger menu for mobile navigation
+      const menu = document.getElementById('menu');
+      const nav = document.getElementById('mainNav');
+      menu.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        menu.setAttribute('aria-expanded', nav.classList.contains('active'));
+      });
+      menu.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          nav.classList.toggle('active');
+          menu.setAttribute('aria-expanded', nav.classList.contains('active'));
+        }
+      });
       // footer copyright
       let output = `<span class='copy-write'>&copy; ${new Date().getFullYear()}</span>`;
       document.querySelector("footer .container").innerHTML += output;

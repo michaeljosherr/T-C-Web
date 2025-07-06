@@ -96,7 +96,7 @@
             <!-- Drinks Tab -->
             <div class="tab-panel active" id="drinks-tab">
               <div class="modern-table-container">
-                <table class="modern-products-table">
+                <table class="modern-products-table responsive-table">
                   <thead>
                     <tr>
                       <th>Category</th>
@@ -333,7 +333,7 @@
             <!-- Snacks Tab -->
             <div class="tab-panel" id="snacks-tab">
               <div class="modern-table-container">
-                <table class="modern-products-table">
+                <table class="modern-products-table responsive-table">
                   <thead>
                     <tr>
                       <th>Category</th>
@@ -481,7 +481,6 @@
       // Footer copyright
       let output = `<span class='copy-write'>&copy; ${new Date().getFullYear()}</span>`;
       document.querySelector("footer .container").innerHTML += output;
-
       // --- Product Table Search Logic ---
       document.addEventListener('DOMContentLoaded', function() {
         const searchInput = document.getElementById('product-search');
@@ -533,6 +532,51 @@
               panel.style.display = '';
             }
           }
+        });
+      });
+    </script>
+    <style>
+      /* Responsive Table for Mobile */
+      @media (max-width: 700px) {
+        .responsive-table, .responsive-table thead, .responsive-table tbody, .responsive-table tr, .responsive-table th, .responsive-table td {
+          display: block;
+          width: 100%;
+        }
+        .responsive-table thead {
+          display: none;
+        }
+        .responsive-table tr {
+          margin-bottom: 1.2em;
+          background: #fff;
+          border-radius: 1em;
+          box-shadow: 0 2px 8px rgba(21,101,192,0.07);
+          padding: 1em 0.7em;
+        }
+        .responsive-table td {
+          text-align: left;
+          padding: 0.7em 1em;
+          position: relative;
+        }
+        .responsive-table td:before {
+          content: attr(data-label);
+          font-weight: 700;
+          color: #1565c0;
+          display: block;
+          margin-bottom: 0.3em;
+          font-size: 0.98em;
+        }
+      }
+    </style>
+    <script>
+      // Add data-labels for mobile responsive table
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.responsive-table').forEach(function(table) {
+          const headers = Array.from(table.querySelectorAll('thead th')).map(th => th.textContent.trim());
+          table.querySelectorAll('tbody tr').forEach(function(row) {
+            row.querySelectorAll('td').forEach(function(td, i) {
+              td.setAttribute('data-label', headers[i]);
+            });
+          });
         });
       });
     </script>
