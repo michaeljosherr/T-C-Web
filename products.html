@@ -552,44 +552,34 @@
     </script>
     <style>
       /* Responsive Table for Mobile - Improved to prevent overlap and stacking issues */
+      .responsive-table {
+        width: 100% !important;
+        table-layout: fixed !important;
+        border-collapse: collapse !important;
+      }
+      .responsive-table th, .responsive-table td {
+        text-align: left;
+        vertical-align: middle;
+        padding: 0.7em 1em !important;
+        border: 1px solid #e0e0e0 !important;
+        white-space: normal !important;
+        word-break: break-word !important;
+      }
+      /* Remove any display: block or flex for table elements on all screens */
+      .responsive-table, .responsive-table thead, .responsive-table tbody, .responsive-table tr, .responsive-table th, .responsive-table td {
+        display: revert !important;
+      }
       @media (max-width: 700px) {
-        .responsive-table, .responsive-table thead, .responsive-table tbody, .responsive-table tr, .responsive-table th, .responsive-table td {
-          display: table !important;
-          width: auto !important;
-          box-sizing: border-box;
+        .responsive-table {
+          width: 100% !important;
+          table-layout: fixed !important;
         }
-        .responsive-table thead {
-          display: table-header-group !important;
-        }
-        .responsive-table tr {
-          display: table-row !important;
-          margin-bottom: 0 !important;
-          background: none !important;
-          border-radius: 0 !important;
-          box-shadow: none !important;
-          padding: 0 !important;
-          overflow: visible !important;
-        }
-        .responsive-table td, .responsive-table th {
-          display: table-cell !important;
-          padding: 0.7em 1em !important;
-          position: static !important;
-          min-height: unset !important;
-          word-break: normal !important;
-          white-space: normal !important;
-          font-size: 1em !important;
-          background: none !important;
-          border: 1px solid #e0e0e0 !important;
-          margin-bottom: 0 !important;
+        .responsive-table th, .responsive-table td {
+          padding: 0.5em 0.5em !important;
+          font-size: 0.97em !important;
         }
         .responsive-table td:before {
           display: none !important;
-        }
-      }
-      @media (max-width: 480px) {
-        .responsive-table td, .responsive-table th {
-          padding: 0.5em 0.5em !important;
-          font-size: 0.97em !important;
         }
       }
       /* Responsive Navigation Bar */
