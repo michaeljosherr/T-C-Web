@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/enhanced-tc-logo__1_-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <title>Products - T&C Food and Products Trading</title>
+    <!-- font awesome script -->
+    <script
+      defer
+      src="https://kit.fontawesome.com/9f47c55281.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google fonts -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap");
+      
+      /* Category color differentiation for tables */
+      .modern-products-table .category-cell.featured { background: #e3f2fd; color: #1565c0; font-weight: bold; }
+      .modern-products-table .category-cell.premium { background: #fff3e0; color: #ef6c00; font-weight: bold; }
+      .modern-products-table .category-cell.essential { background: #e8f5e9; color: #2e7d32; font-weight: bold; }
+      .modern-products-table .category-cell.healthy { background: #f3e5f5; color: #6a1b9a; font-weight: bold; }
+      .modern-products-table .category-cell { background: #f5f5f5; color: #333; font-weight: bold; }
+      /* Snacks tab category colors */
+      .modern-products-table .category-cell[data-category="Mang Juan"] { background: #fffde7; color: #fbc02d; }
+      .modern-products-table .category-cell[data-category="Calbee"] { background: #e1f5fe; color: #0288d1; }
+      .modern-products-table .category-cell[data-category="Chippy"] { background: #fce4ec; color: #ad1457; }
+      .modern-products-table .category-cell[data-category="Chiz Curls"] { background: #f3e5f5; color: #6a1b9a; }
+      .modern-products-table .category-cell[data-category="Mr. Chips"] { background: #e8f5e9; color: #388e3c; }
+      .modern-products-table .category-cell[data-category="Nova"] { background: #ede7f6; color: #512da8; }
+      .modern-products-table .category-cell[data-category="Piattos"] { background: #e3f2fd; color: #1565c0; }
+      .modern-products-table .category-cell[data-category="Pic-A"] { background: #fff3e0; color: #ef6c00; }
+      .modern-products-table .category-cell[data-category="Potato Chips"] { background: #fbe9e7; color: #d84315; }
+      .modern-products-table .category-cell[data-category="Ripples"] { background: #e0f2f1; color: #00897b; }
+      .modern-products-table .category-cell[data-category="Roller Coaster"] { background: #f9fbe7; color: #827717; }
+      .modern-products-table .category-cell[data-category="Tortillos"] { background: #f3e5ab; color: #a1887f; }
+    </style>
+  </head>
+  <body class="relative">
+    <!-- header section -->
+    <header>
+      <div class="container header-section">
+        <div aria-details="logo" class="logo">
+          <a href="index.html"><img src="img/enhanced-tc-logo__1_-removebg-preview.png" alt="T&C Logo"></a>
+        </div>
+        <div class="menu" id="menu">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="about-contact.html">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Products Hero Section -->
+    <section id="products-hero" class="products-hero-section">
+      <div class="container">
+        <div class="products-hero-content">
+          <h1 class="products-hero-title">Our Products</h1>
+          <p class="products-hero-subtitle">Discover our wide range of high-quality beverages and food products</p>
+          
+          <!-- Featured Products Collage -->
+          <div class="products-collage">
+            <h3 class="featured-title">Our Product Range</h3>
+            <div class="collage-container">
+              <!-- You can add a static image or grid here if desired -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products section -->
+    <section id="products" class="products-page-section">
+      <div class="container products-section">
+        <div class="products-tabs">
+          <div class="tab-buttons">
+            <button class="tab-btn active" data-tab="drinks">Drinks</button>
+            <button class="tab-btn" data-tab="snacks">Snacks</button>
+          </div>
+          <!-- Search Bar -->
+          <div class="table-search-bar" style="margin: 1.5em 0 1em 0; display: flex; justify-content: flex-end;">
+            <input type="text" id="product-search" placeholder="Search products..." style="padding: 0.7em 1.2em; border-radius: 2em; border: 1.5px solid #b3c6e0; font-size: 1em; min-width: 260px; box-shadow: 0 1px 6px rgba(21,101,192,0.06); outline: none;">
+          </div>
+          
+          <div class="tab-content">
+            <!-- Drinks Tab -->
+            <div class="tab-panel active" id="drinks-tab">
+              <div class="modern-table-container">
+                <table class="modern-products-table">
+                  <thead>
+                    <tr>
+                      <th>Category</th>
+                      <th>Product Description</th>
+                      <th>Packing</th>
+                      <th>Price (per case)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- C2 Black Tea -->
+                    <tr class="category-row">
+                      <td rowspan="1" class="category-cell featured">C2 BLACK TEA</td>
+                      <td>C2 Black Tea Peach Flavor 230ML</td>
+                      <td>230mlx24</td>
+                      <td class="price-cell">₱294.00</td>
+                    </tr>
+                    
+                    <!-- C2 Green Tea 355ML -->
+                    <tr class="category-row">
+                      <td rowspan="7" class="category-cell premium">C2 GREEN TEA 355ML</td>
+                      <td>C2 Green Tea Plain</td>
+                      <td>355mlx24</td>
+                      <td class="price-cell">₱565.20</td>
+                    </tr>
+                    <tr>
+                      <td>C2 Green Tea Apple</td>
+                      <td>355mlx24</td>
+                      <td class="price-cell">₱565.20</td>
+                    </tr>
+                    <tr>
+                      <td>C2 Green Tea Lemon</td>
+                      <td>355mlx24</td>
+                      <td class="price-cell">₱565.20</td>
+                    </tr>
+                    <tr>
+                      <td>C2 Lite Green Tea Apple sugar free</td>
+                      <td>355mlx24</td>
+                      <td class="price-cell">₱565.20</td>
+                    </tr>
+                    <tr>
+                      <td>C2 Green Tea Dalandan</td>
+                      <td>355mlx24</td>
+                      <td class="price-cell">₱565.20</td>
+                    </tr>
+                    <tr>
+                      <td>C2 Freeze Melon 335mlx24</td>
+                      <td>335mlx24</td>
+                      <td class="price-cell">₱565.20</td>
+                    </tr>
+                    <tr>
+                      <td>C2 Plus Immuno Calamansi</td>
+                      <td>350mlx24</td>
+                      <td class="price-cell">₱522.00</td>
+                    </tr>
+                    
+                    <!-- C2 Iced Tea -->
+                    <tr class="category-row">
+                      <td rowspan="1" class="category-cell">C2 ICED TEA 355ML</td>
+                      <td>C2 Red Tea Raspberry</td>
+                      <td>335mlx24</td>
+                      <td class="price-cell">₱565.20</td>
+                    </tr>
+                    
+                    <!-- C2 Green Tea 500ML -->
+                    <tr class="category-row">
+                      <td rowspan="4" class="category-cell">C2 GREEN TEA 500ML</td>
+                      <td>C2 Green Tea Plain</td>
+                      <td>500mlx24</td>
+                      <td class="price-cell">₱681.60</td>
+                    </tr>
+                    <tr>
+                      <td>C2 Green Tea Apple</td>
+                      <td>500mlx24</td>
+                      <td class="price-cell">₱681.60</td>
+                    </tr>
+                    <tr>
+                      <td>C2 Green Tea Lemon</td>
+                      <td>500mlx24</td>
+                      <td class="price-cell">₱681.60</td>
+                    </tr>
+                    <tr>
+                      <td>C2 Green Tea Peach</td>
+                      <td>500mlx24</td>
+                      <td class="price-cell">₱681.60</td>
+                    </tr>
+                    
+                    <!-- C2 Green Tea 1L -->
+                    <tr class="category-row">
+                      <td rowspan="3" class="category-cell">C2 GREEN TEA 1 LITER</td>
+                      <td>C2 Green Tea Plain 1 Liter</td>
+                      <td>1Lx12</td>
+                      <td class="price-cell">₱597.00</td>
+                    </tr>
+                    <tr>
+                      <td>C2 Green Tea Apple 1 Liter</td>
+                      <td>1Lx12</td>
+                      <td class="price-cell">₱597.00</td>
+                    </tr>
+                    <tr>
+                      <td>C2 Black Tea Peach Flavor 1L</td>
+                      <td>1Lx12</td>
+                      <td class="price-cell">₱597.00</td>
+                    </tr>
+                    
+                    <!-- Vitasoy -->
+                    <tr class="category-row">
+                      <td rowspan="8" class="category-cell premium">VITASOY</td>
+                      <td>Vitasoy Milk Drink Original Flavor</td>
+                      <td>200mlx24</td>
+                      <td class="price-cell">₱396.76</td>
+                    </tr>
+                    <tr>
+                      <td>Vitasoy Milk Drink Chocolate Flavor</td>
+                      <td>300mlx24</td>
+                      <td class="price-cell">₱564.29</td>
+                    </tr>
+                    <tr>
+                      <td>Vitasoy Milk Drink Coffee Flavor</td>
+                      <td>300mlx24</td>
+                      <td class="price-cell">₱564.29</td>
+                    </tr>
+                    <tr>
+                      <td>Vitasoy Plus Ultimate Milky Vanilla 300ML</td>
+                      <td>300mlx24</td>
+                      <td class="price-cell">₱638.81</td>
+                    </tr>
+                    <tr>
+                      <td>Vitasoy Plus Original</td>
+                      <td>1Lx12</td>
+                      <td class="price-cell">₱1,045.44</td>
+                    </tr>
+                    <tr>
+                      <td>Vitasoy Plus Oat</td>
+                      <td>1Lx12</td>
+                      <td class="price-cell">₱1,045.44</td>
+                    </tr>
+                    <tr>
+                      <td>Vitasoy Plus Milky Almond milk</td>
+                      <td>1Lx12</td>
+                      <td class="price-cell">₱1,045.44</td>
+                    </tr>
+                    <tr>
+                      <td>Vitasoy Plus Soy Milk Drink Milky Flavor</td>
+                      <td>1Lx12</td>
+                      <td class="price-cell">₱1,045.44</td>
+                    </tr>
+                    
+                    <!-- Chocolate RTD -->
+                    <tr class="category-row">
+                      <td rowspan="2" class="category-cell">CHOCOLATE RTD</td>
+                      <td>C9 Chocolate Milk Drink</td>
+                      <td>180mlx36</td>
+                      <td class="price-cell">₱619.20</td>
+                    </tr>
+                    <tr>
+                      <td>C9 Chocolate Milk n Drink</td>
+                      <td>180mlx36</td>
+                      <td class="price-cell">₱417.60</td>
+                    </tr>
+                    
+                    <!-- Coffee RTD -->
+                    <tr class="category-row">
+                      <td rowspan="4" class="category-cell">COFFEE RTD</td>
+                      <td>Great Taste Iced Coffee Dark Latte</td>
+                      <td>200mlx24</td>
+                      <td class="price-cell">₱442.55</td>
+                    </tr>
+                    <tr>
+                      <td>Great Taste Iced Coffee Caramel Macchiat</td>
+                      <td>24's</td>
+                      <td class="price-cell">₱442.55</td>
+                    </tr>
+                    <tr>
+                      <td>Great Taste Iced Coffee Vanilla Latte</td>
+                      <td>24's</td>
+                      <td class="price-cell">₱442.55</td>
+                    </tr>
+                    <tr>
+                      <td>Great Taste Iced Coffee Chocolate Mocha</td>
+                      <td>24's</td>
+                      <td class="price-cell">₱442.55</td>
+                    </tr>
+                    
+                    <!-- Refresh Mineral Water -->
+                    <tr class="category-row">
+                      <td rowspan="3" class="category-cell essential">REFRESH MINERAL WATER</td>
+                      <td>Refresh Mineral water sw 350mlx24</td>
+                      <td>350mlx24</td>
+                      <td class="price-cell">₱132.00</td>
+                    </tr>
+                    <tr>
+                      <td>Refresh Mineral water sw 500mlx24</td>
+                      <td>500mlx24</td>
+                      <td class="price-cell">₱168.00</td>
+                    </tr>
+                    <tr>
+                      <td>Refresh Mineral water</td>
+                      <td>1Lx12</td>
+                      <td class="price-cell">₱148.80</td>
+                    </tr>
+                    
+                    <!-- B'LU Vitamin Drink -->
+                    <tr class="category-row">
+                      <td rowspan="5" class="category-cell healthy">B'LU VITAMIN DRINK</td>
+                      <td>B'LU Calamansi Water-Based Drink 230Ml</td>
+                      <td>230mlx24</td>
+                      <td class="price-cell">₱230.40</td>
+                    </tr>
+                    <tr>
+                      <td>B'LU Vitamin Drink Lemon 330ml</td>
+                      <td>330mlx15</td>
+                      <td class="price-cell">₱326.98</td>
+                    </tr>
+                    <tr>
+                      <td>B'LU Vitamin Drink Orange 330ml</td>
+                      <td>330mlx15</td>
+                      <td class="price-cell">₱326.98</td>
+                    </tr>
+                    <tr>
+                      <td>B'LU Vitamin Drink Lychee 500mlx15</td>
+                      <td>500mlx15</td>
+                      <td class="price-cell">₱508.95</td>
+                    </tr>
+                    <tr>
+                      <td>B'LU Zero Pineapple Yogurt</td>
+                      <td>330mlx15</td>
+                      <td class="price-cell">₱236.98</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            
+            <!-- Snacks Tab -->
+            <div class="tab-panel" id="snacks-tab">
+              <div class="modern-table-container">
+                <table class="modern-products-table">
+                  <thead>
+                    <tr>
+                      <th>Category</th>
+                      <th>Product Description</th>
+                      <th>Packing</th>
+                      <th>Price (per case)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td class="category-cell" data-category="Mang Juan">Mang Juan</td><td>Chicha Ni Mang Juan Sukang Paombong</td><td>90gx18</td><td class="price-cell">384.05</td></tr>
+                    <tr><td class="category-cell" data-category="Mang Juan">Mang Juan</td><td>Chicha Ni Mang Juan Espesyal Sukat Sili</td><td>90gx18</td><td class="price-cell">384.05</td></tr>
+                    <tr><td class="category-cell" data-category="Mang Juan">Mang Juan</td><td>Chicha Ni Mang Juan Klasik 90gx18</td><td>90gx18</td><td class="price-cell">384.05</td></tr>
+                    <tr><td class="category-cell" data-category="Mang Juan">Mang Juan</td><td>Chicha Ni Mang Juan Sukang Paombong 80's</td><td>26gx80</td><td class="price-cell">537.21</td></tr>
+                    <tr><td class="category-cell" data-category="Mang Juan">Mang Juan</td><td>Chicha Ni Mang Juan Espesyal Sukat Sili 80's</td><td>26gx80</td><td class="price-cell">537.21</td></tr>
+                    <tr><td class="category-cell" data-category="Mang Juan">Mang Juan</td><td>Chicken Skin Ni Mang Juan 50's</td><td>70gx50</td><td class="price-cell">887.66</td></tr>
+                    <tr><td class="category-cell" data-category="Mang Juan">Mang Juan</td><td>Chicken Skin Ni Mang Juan 100's</td><td>16gx100</td><td class="price-cell">671.50</td></tr>
+                    <tr><td class="category-cell" data-category="Mang Juan">Mang Juan</td><td>Chicken Skin Ni Mang Juan Suka</td><td>16gx100</td><td class="price-cell">671.50</td></tr>
+                    <tr><td class="category-cell" data-category="Mang Juan">Mang Juan</td><td>Chicharron Ni Mang Juan Klasik Chicharron</td><td>26gx80</td><td class="price-cell">537.21</td></tr>
+                    <tr><td class="category-cell" data-category="Mang Juan">Mang Juan</td><td>Kropek Ni Mang Juan</td><td>22gx72</td><td class="price-cell">498.24</td></tr>
+                    <tr><td class="category-cell" data-category="Mang Juan">Mang Juan</td><td>Kropek Ni Mang Juan</td><td>80gx18</td><td class="price-cell">498.24</td></tr>
+                    <tr><td class="category-cell" data-category="Mang Juan">Mang Juan</td><td>Kropek Ni Mang Juan Sweet Chili Hipon 22g</td><td>22gx80</td><td class="price-cell">498.24</td></tr>
+                    <tr><td class="category-cell" data-category="Mang Juan">Mang Juan</td><td>Kropek Ni Mang Juan Sweet Chili Hipon 80g</td><td>80gx18</td><td class="price-cell">498.24</td></tr>
+                    <tr><td class="category-cell" data-category="Calbee">Calbee</td><td>Jnj Calbee Pot.Chips Chdr&Scrm 48S</td><td>28gx48</td><td class="price-cell">911.23</td></tr>
+                    <tr><td class="category-cell" data-category="Calbee">Calbee</td><td>Jnj Calbee Pot.Chips Clsc Sltd 48S</td><td>28gx48</td><td class="price-cell">911.23</td></tr>
+                    <tr><td class="category-cell" data-category="Calbee">Calbee</td><td>Jnj Calbee Pot.Chips Wasabi 48S</td><td>28gx48</td><td class="price-cell">911.23</td></tr>
+                    <tr><td class="category-cell" data-category="Calbee">Calbee</td><td>Jnj Calbee Pot.Chips Chdr&Scrm 12S</td><td>170gx12</td><td class="price-cell">1,304.35</td></tr>
+                    <tr><td class="category-cell" data-category="Calbee">Calbee</td><td>Jnj Calbee Pot.Chips Clsc Sltd 12S</td><td>170gx12</td><td class="price-cell">1,304.35</td></tr>
+                    <tr><td class="category-cell" data-category="Calbee">Calbee</td><td>Jnj Calbee Pot.Chips Wasabi 12S</td><td>170gx12</td><td class="price-cell">1,304.35</td></tr>
+                    <tr><td class="category-cell" data-category="Calbee">Calbee</td><td>Jnj-Calbee Pot.Chips Honey Btr 22gx80</td><td>22gx80</td><td class="price-cell">1,219.79</td></tr>
+                    <tr><td class="category-cell" data-category="Chippy">Chippy</td><td>Chippy Bbq</td><td>110gx50</td><td class="price-cell">1,174.23</td></tr>
+                    <tr><td class="category-cell" data-category="Chippy">Chippy</td><td>Chippy Chili & Cheese</td><td>110gx50</td><td class="price-cell">1,174.23</td></tr>
+                    <tr><td class="category-cell" data-category="Chippy">Chippy</td><td>Chippy Bbq</td><td>15gx100</td><td class="price-cell">671.50</td></tr>
+                    <tr><td class="category-cell" data-category="Chippy">Chippy</td><td>Chippy Chili & Cheese</td><td>15gx100</td><td class="price-cell">671.50</td></tr>
+                    <tr><td class="category-cell" data-category="Chippy">Chippy</td><td>Chippy Garlic And Vinegar 100's</td><td>30gx100</td><td class="price-cell">1,174.23</td></tr>
+                    <tr><td class="category-cell" data-category="Chippy">Chippy</td><td>Chippy Garlic And Vinegar 50's</td><td>15gx100</td><td class="price-cell">671.50</td></tr>
+                    <tr><td class="category-cell" data-category="Chippy">Chippy</td><td>Chippy Mild & Tasty 100's</td><td>27gx100</td><td class="price-cell">1,174.23</td></tr>
+                    <tr><td class="category-cell" data-category="Chippy">Chippy</td><td>Chippy Mild & Tasty 50's</td><td>13gx100</td><td class="price-cell">671.50</td></tr>
+                    <tr><td class="category-cell" data-category="Chiz Curls">Chiz Curls</td><td>Chiz Curls</td><td>18gx50</td><td class="price-cell">671.50</td></tr>
+                    <tr><td class="category-cell" data-category="Chiz Curls">Chiz Curls</td><td>Chiz Curls</td><td>18gx100</td><td class="price-cell">671.50</td></tr>
+                    <tr><td class="category-cell" data-category="Mr. Chips">Mr. Chips</td><td>Mr. Chips Cheese</td><td>26gx100</td><td class="price-cell">546.73</td></tr>
+                    <tr><td class="category-cell" data-category="Mr. Chips">Mr. Chips</td><td>Mr. Chips Cheese</td><td>105gx50</td><td class="price-cell">1,040.70</td></tr>
+                    <tr><td class="category-cell" data-category="Mr. Chips">Mr. Chips</td><td>Mr. Chips Mais</td><td>45gx54</td><td class="price-cell">403.38</td></tr>
+                    <tr><td class="category-cell" data-category="Mr. Chips">Mr. Chips</td><td>Mr. Chips Mais</td><td>110gx40</td><td class="price-cell">887.66</td></tr>
+                    <!-- Reverted Nova snack rows to original state and position -->
+                    <tr><td class="category-cell" data-category="Nova">Nova</td><td>Nova Country Cheddar</td><td>78gx50</td><td class="price-cell">1,174.23</td></tr>
+                    <tr><td class="category-cell" data-category="Nova">Nova</td><td>Nova Country Cheddar</td><td>26gx100</td><td class="price-cell">671.50</td></tr>
+                    <tr><td class="category-cell" data-category="Nova">Nova</td><td>Nova Multigrain Snacks</td><td>26gx100</td><td class="price-cell">671.50</td></tr>
+                    <tr><td class="category-cell" data-category="Nova">Nova</td><td>Nova Multigrain Snacks</td><td>78gx50</td><td class="price-cell">1,174.23</td></tr>
+                    <!-- Added Piattos and related snacks rows -->
+                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Sour & Cream</td><td>85gx50</td><td class="price-cell">1,579.76</td></tr>
+                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Cheese</td><td>40gx80</td><td class="price-cell">1,209.88</td></tr>
+                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Cheese</td><td>85gx50</td><td class="price-cell">1,579.76</td></tr>
+                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Cheese Supersize</td><td>170gx18</td><td class="price-cell">1,108.24</td></tr>
+                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Sour & Cream Supersize</td><td>170gx18</td><td class="price-cell">1,108.24</td></tr>
+                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Nacho Pizza</td><td>40gx80</td><td class="price-cell">1,209.88</td></tr>
+                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Nacho Pizza</td><td>85gx50</td><td class="price-cell">1,579.76</td></tr>
+                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Roadhouse Bbq</td><td>40gx80</td><td class="price-cell">1,209.88</td></tr>
+                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Roadhouse Bbq</td><td>85gx50</td><td class="price-cell">1,579.76</td></tr>
+                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Roasted Beef 80's</td><td>25gx80</td><td class="price-cell">1,209.88</td></tr>
+                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Roasted Beef 50's</td><td>25gx50</td><td class="price-cell">1,209.88</td></tr>
+                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Salted Potato 80's</td><td>45gx80</td><td class="price-cell">1,209.88</td></tr>
+                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Salted Potato 50's</td><td>45gx50</td><td class="price-cell">1,209.88</td></tr>
+                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos spicy cheese</td><td>40gx80</td><td class="price-cell">1,209.88</td></tr>
+                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos spicy cheese</td><td>85gx50</td><td class="price-cell">1,579.76</td></tr>
+                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Truffle Cream</td><td>40gx80</td><td class="price-cell">1,209.88</td></tr>
+                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Truffle Cream</td><td>85gx50</td><td class="price-cell">1,579.76</td></tr>
+                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Beef Bulgogi</td><td>40gx80</td><td class="price-cell">1,628.36</td></tr>
+                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Beef Bulgogi</td><td>85gx50</td><td class="price-cell">1,628.36</td></tr>
+                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Four Cheese</td><td>40gx80</td><td class="price-cell">1,636.36</td></tr>
+                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Four Cheese</td><td>85gx50</td><td class="price-cell">1,636.36</td></tr>
+                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Four Cheese Supersized</td><td>170gx18</td><td class="price-cell">1,145.43</td></tr>
+                    <tr><td class="category-cell" data-category="Pic-A">Pic-A</td><td>Pic-A Ultimate Cheddar Mix</td><td>180gx18</td><td class="price-cell">923.44</td></tr>
+                    <tr><td class="category-cell" data-category="Pic-A">Pic-A</td><td>Pic-A Bbq Overload Sncks Mix</td><td>170gx18</td><td class="price-cell">1,108.24</td></tr>
+                    <tr><td class="category-cell" data-category="Pic-A">Pic-A</td><td>Pic-A Ultimate Cheddar Snack Mix 50's</td><td>50's</td><td class="price-cell">1,578.98</td></tr>
+                    <tr><td class="category-cell" data-category="Pic-A">Pic-A</td><td>Pic-A Bbq Overload Snack Mix 50s</td><td>50's</td><td class="price-cell">1,578.98</td></tr>
+                    <tr><td class="category-cell" data-category="Pic-A">Pic-A</td><td>Pic-A Sweet chili 18's</td><td>170gx18</td><td class="price-cell">923.44</td></tr>
+                    <tr><td class="category-cell" data-category="Potato Chips">Potato Chips</td><td>Potato Chips Bbq</td><td>25gx80</td><td class="price-cell">1,209.88</td></tr>
+                    <tr><td class="category-cell" data-category="Potato Chips">Potato Chips</td><td>Potato Chips Bbq</td><td>65gx50</td><td class="price-cell">1,716.01</td></tr>
+                    <tr><td class="category-cell" data-category="Potato Chips">Potato Chips</td><td>Potato Chips Bbq 18's</td><td>130gx18</td><td class="price-cell">1,319.58</td></tr>
+                    <tr><td class="category-cell" data-category="Potato Chips">Potato Chips</td><td>Pot.Chips Plain Salted 22gx80</td><td>22gx80</td><td class="price-cell">1,203.66</td></tr>
+                    <tr><td class="category-cell" data-category="Potato Chips">Potato Chips</td><td>Pot.Chips Plain Salted 60gx50</td><td>60gx50</td><td class="price-cell">1,716.01</td></tr>
+                    <tr><td class="category-cell" data-category="Potato Chips">Potato Chips</td><td>Pot.Chips Plain Salted 18's</td><td>130gx18</td><td class="price-cell">1,319.58</td></tr>
+                    <tr><td class="category-cell" data-category="Potato Chips">Potato Chips</td><td>Potato Chips Sour Cream 80S</td><td>25gx80</td><td class="price-cell">1,209.88</td></tr>
+                    <tr><td class="category-cell" data-category="Potato Chips">Potato Chips</td><td>Potato Chips Sour Cream 50'S</td><td>50's</td><td class="price-cell">1,716.01</td></tr>
+                    <tr><td class="category-cell" data-category="Calbee">Calbee</td><td>Jnj Calbee Pot. Chips Honey Butter 60G</td><td>60gx24</td><td class="price-cell">671.24</td></tr>
+                    <tr><td class="category-cell" data-category="Calbee">Calbee</td><td>Jnj Calbee Pot. Chips Honey Butter 170G</td><td>170gx12</td><td class="price-cell">1,304.35</td></tr>
+                    <tr><td class="category-cell" data-category="Ripples">Ripples</td><td>Ripples Sour Cream & Onion</td><td>124gx12</td><td class="price-cell">1,304.35</td></tr>
+                    <tr><td class="category-cell" data-category="Ripples">Ripples</td><td>Ripples Nori</td><td>124gx12</td><td class="price-cell">1,304.35</td></tr>
+                    <tr><td class="category-cell" data-category="Roller Coaster">Roller Coaster</td><td>Roller Coaster Cheese</td><td>85gx50</td><td class="price-cell">1,134.22</td></tr>
+                    <tr><td class="category-cell" data-category="Roller Coaster">Roller Coaster</td><td>Roller Coaster Bbq 100's</td><td>20gx100</td><td class="price-cell">671.24</td></tr>
+                    <tr><td class="category-cell" data-category="Roller Coaster">Roller Coaster</td><td>Roller Coaster Bbq 50's</td><td>85gx50</td><td class="price-cell">1,134.22</td></tr>
+                    <tr><td class="category-cell" data-category="Tortillos">Tortillos</td><td>Tortillos Bbq</td><td>25gx100</td><td class="price-cell">2,247.45</td></tr>
+                    <tr><td class="category-cell" data-category="Tortillos">Tortillos</td><td>Tortillos Bbq</td><td>16gx90</td><td class="price-cell">1,295.02</td></tr>
+                    <tr><td class="category-cell" data-category="Tortillos">Tortillos</td><td>Tortillos Bbq</td><td>160gx36</td><td class="price-cell">1,657.02</td></tr>
+                    <tr><td class="category-cell" data-category="Tortillos">Tortillos</td><td>Tortillos Cheese</td><td>100gx50</td><td class="price-cell">1,257.26</td></tr>
+                    <tr><td class="category-cell" data-category="Tortillos">Tortillos</td><td>Tortillos Cheese</td><td>25gx100</td><td class="price-cell">1,173.93</td></tr>
+                    <tr><td class="category-cell" data-category="Tortillos">Tortillos</td><td>Tortillos Cheese</td><td>100gx50</td><td class="price-cell">1,257.26</td></tr>
+                    <tr><td class="category-cell" data-category="Tortillos">Tortillos</td><td>Tortillps Chili</td><td>100gx50</td><td class="price-cell">1,173.93</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="contact-cta-section">
+      <div class="container">
+        <div class="contact-cta-content">
+          <h2>Need More Information?</h2>
+          <p>Contact us for bulk orders, custom packages, or product availability inquiries.</p>
+          <div class="contact-buttons">
+            <a href="about-contact.html#contact" class="cta-btn primary">
+              <i class="fa-solid fa-phone"></i>
+              Call Us
+            </a>
+            <a href="about-contact.html#contact" class="cta-btn secondary">
+              <i class="fa-solid fa-envelope"></i>
+              Email Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-section">        <ul class="footer-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="index.html#features">Features</a></li>
+    <li><a href="about-contact.html">About Us</a></li>
+  </ul>
+  <div class="footer-logo">
+    <span>T&C</span>
+  </div>
+</div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+      // Footer copyright
+      let output = `<span class='copy-write'>&copy; ${new Date().getFullYear()}</span>`;
+      document.querySelector("footer .container").innerHTML += output;
+
+      // --- Product Table Search Logic ---
+      document.addEventListener('DOMContentLoaded', function() {
+        const searchInput = document.getElementById('product-search');
+        const allTables = document.querySelectorAll('.modern-products-table');
+        if (searchInput) {
+          searchInput.addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            allTables.forEach(table => {
+              const rows = table.querySelectorAll('tbody tr');
+              rows.forEach(row => {
+                const rowText = row.textContent.toLowerCase();
+                row.style.display = rowText.includes(query) ? '' : 'none';
+              });
+            });
+          });
+        }
+      });
+      // --- Tab Switching Logic (Robust by data attribute) ---
+      document.addEventListener('DOMContentLoaded', function() {
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabPanels = document.querySelectorAll('.tab-panel');
+        tabButtons.forEach((button) => {
+          button.addEventListener('click', function() {
+            // Remove active from all buttons
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            // Hide all panels
+            tabPanels.forEach(panel => {
+              panel.classList.remove('active');
+              panel.style.display = 'none';
+            });
+            // Add active to clicked button
+            this.classList.add('active');
+            // Show the corresponding panel by data-tab attribute
+            const tabName = this.getAttribute('data-tab');
+            const panel = document.getElementById(tabName + '-tab');
+            if (panel) {
+              panel.classList.add('active');
+              panel.style.display = '';
+            }
+          });
+        });
+        // On load, show only the active panel
+        tabButtons.forEach((btn) => {
+          if (btn.classList.contains('active')) {
+            const tabName = btn.getAttribute('data-tab');
+            const panel = document.getElementById(tabName + '-tab');
+            if (panel) {
+              panel.classList.add('active');
+              panel.style.display = '';
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
