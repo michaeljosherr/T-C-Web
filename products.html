@@ -554,64 +554,42 @@
       /* Responsive Table for Mobile - Improved to prevent overlap and stacking issues */
       @media (max-width: 700px) {
         .responsive-table, .responsive-table thead, .responsive-table tbody, .responsive-table tr, .responsive-table th, .responsive-table td {
-          display: block;
-          width: 100%;
+          display: table !important;
+          width: auto !important;
           box-sizing: border-box;
         }
         .responsive-table thead {
-          display: none;
+          display: table-header-group !important;
         }
         .responsive-table tr {
-          margin-bottom: 1.2em;
-          background: #fff;
-          border-radius: 1em;
-          box-shadow: 0 2px 8px rgba(21,101,192,0.07);
-          padding: 0.7em 0.5em;
-          overflow: hidden;
-          display: flex;
-          flex-direction: column;
+          display: table-row !important;
+          margin-bottom: 0 !important;
+          background: none !important;
+          border-radius: 0 !important;
+          box-shadow: none !important;
+          padding: 0 !important;
+          overflow: visible !important;
         }
-        .responsive-table td {
-          text-align: left;
-          padding: 0.7em 0.7em 0.7em 1em;
-          position: relative;
-          min-height: 2.5em;
-          word-break: break-word;
-          white-space: pre-line;
-          font-size: 1em;
-          border: none;
-          background: none;
-          margin-bottom: 0.2em;
+        .responsive-table td, .responsive-table th {
+          display: table-cell !important;
+          padding: 0.7em 1em !important;
+          position: static !important;
+          min-height: unset !important;
+          word-break: normal !important;
+          white-space: normal !important;
+          font-size: 1em !important;
+          background: none !important;
+          border: 1px solid #e0e0e0 !important;
+          margin-bottom: 0 !important;
         }
         .responsive-table td:before {
-          content: attr(data-label);
-          font-weight: 700;
-          color: #1565c0;
-          display: block;
-          margin-bottom: 0.3em;
-          font-size: 0.98em;
-          white-space: normal;
-        }
-        .responsive-table td.price-cell {
-          font-size: 1.1em;
-          color: #1565c0;
-          font-weight: bold;
-        }
-        .responsive-table td.category-cell {
-          font-size: 1em;
-          font-weight: bold;
+          display: none !important;
         }
       }
       @media (max-width: 480px) {
-        .responsive-table tr {
-          padding: 0.4em 0.2em;
-        }
-        .responsive-table td {
-          padding: 0.5em 0.3em 0.5em 0.8em;
-          font-size: 0.97em;
-        }
-        .responsive-table td:before {
-          font-size: 0.93em;
+        .responsive-table td, .responsive-table th {
+          padding: 0.5em 0.5em !important;
+          font-size: 0.97em !important;
         }
       }
       /* Responsive Navigation Bar */
