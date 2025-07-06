@@ -50,6 +50,67 @@
         font-size: 1.3em !important;
       }
     }
+    /* Fix for overlapping table cells in mobile view */
+    @media (max-width: 700px) {
+      .responsive-table, .responsive-table thead, .responsive-table tbody, .responsive-table tr, .responsive-table th, .responsive-table td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .responsive-table thead {
+        display: none;
+      }
+      .responsive-table tr {
+        margin-bottom: 1.2em;
+        background: #fff;
+        border-radius: 1em;
+        box-shadow: 0 2px 8px rgba(21,101,192,0.07);
+        padding: 0.7em 0.5em;
+        overflow: hidden;
+      }
+      .responsive-table td {
+        text-align: left;
+        padding: 0.7em 0.7em 0.7em 1em;
+        position: relative;
+        min-height: 2.5em;
+        word-break: break-word;
+        white-space: normal;
+        font-size: 1em;
+        background: none !important;
+        border: none !important;
+        margin-bottom: 0.5em;
+      }
+      .responsive-table td:before {
+        content: attr(data-label);
+        font-weight: 700;
+        color: #1565c0;
+        display: block;
+        margin-bottom: 0.3em;
+        font-size: 0.98em;
+        white-space: normal;
+      }
+      .responsive-table td.price-cell {
+        font-size: 1.1em;
+        color: #1565c0;
+        font-weight: bold;
+      }
+      .responsive-table td.category-cell {
+        font-size: 1em;
+        font-weight: bold;
+      }
+    }
+    @media (max-width: 480px) {
+      .responsive-table tr {
+        padding: 0.4em 0.2em;
+      }
+      .responsive-table td {
+        padding: 0.5em 0.3em 0.5em 0.8em;
+        font-size: 0.97em;
+      }
+      .responsive-table td:before {
+        font-size: 0.93em;
+      }
+    }
   </style>
 </head>
 <body>
@@ -142,5 +203,24 @@
   </footer>
   <script src="script.js"></script>
   <script src="observer.js"></script>
+  <script>
+    // Hamburger menu for mobile navigation
+    document.addEventListener('DOMContentLoaded', function() {
+      const menu = document.getElementById('menu');
+      const nav = document.querySelector('nav');
+      if (menu && nav) {
+        menu.addEventListener('click', function() {
+          nav.classList.toggle('active');
+          menu.setAttribute('aria-expanded', nav.classList.contains('active'));
+        });
+        menu.addEventListener('keypress', function(e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            nav.classList.toggle('active');
+            menu.setAttribute('aria-expanded', nav.classList.contains('active'));
+          }
+        });
+      }
+    });
+  </script>
 </body>
 </html>
