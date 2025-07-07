@@ -80,7 +80,7 @@
           <div class="collage-img-wrap collage-img-5"><img src="img/nova.jpg" alt="Nova" class="collage-img fade-in"></div>
           <div class="collage-img-wrap collage-img-6"><img src="img/piattos-variety.jpg" alt="Piattos Variety" class="collage-img fade-in"></div>
           <div class="collage-img-wrap collage-img-7"><img src="img/pic-a-snack.jpg" alt="Pic-A-Snack" class="collage-img fade-in"></div>
-          <div class="collage-img-wrap collage-img-8"><img src="img/vitasoy-bottles.jpg" alt="Vitasoy Bottles" class="collage-img fade-in"></div>
+          <div class="collage-img-wrap collage-img-8"><img src="img/maling.jpg" alt="Vitasoy Bottles" class="collage-img fade-in"></div>
         </div>
       </div>
       <style>
@@ -275,6 +275,7 @@
           <div class="tab-buttons">
             <button class="tab-btn active" data-tab="drinks">Drinks</button>
             <button class="tab-btn" data-tab="snacks">Snacks</button>
+            <button class="tab-btn" data-tab="canned">Canned Goods</button>
           </div>
           <!-- Search Bar -->
           <div class="table-search-bar" style="margin: 1.5em 0 1em 0; display: flex; justify-content: flex-end;">
@@ -514,13 +515,14 @@
                       <td>330mlx15</td>
                       <td class="price-cell">₱236.98</td>
                     </tr>
+                 
+                  
                   </tbody>
                 </table>
               </div>
             </div>
-            
             <!-- Snacks Tab -->
-            <div class="tab-panel" id="snacks-tab">
+            <div class="tab-panel" id="snacks-tab" style="display:none;">
               <div class="modern-table-container">
                 <table class="modern-products-table responsive-table">
                   <thead>
@@ -532,95 +534,135 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr><td class="category-cell" data-category="Mang Juan">Mang Juan</td><td>Chicha Ni Mang Juan Sukang Paombong</td><td>90gx18</td><td class="price-cell">384.05</td></tr>
-                    <tr><td class="category-cell" data-category="Mang Juan">Mang Juan</td><td>Chicha Ni Mang Juan Espesyal Sukat Sili</td><td>90gx18</td><td class="price-cell">384.05</td></tr>
-                    <tr><td class="category-cell" data-category="Mang Juan">Mang Juan</td><td>Chicha Ni Mang Juan Klasik 90gx18</td><td>90gx18</td><td class="price-cell">384.05</td></tr>
-                    <tr><td class="category-cell" data-category="Mang Juan">Mang Juan</td><td>Chicha Ni Mang Juan Sukang Paombong 80's</td><td>26gx80</td><td class="price-cell">537.21</td></tr>
-                    <tr><td class="category-cell" data-category="Mang Juan">Mang Juan</td><td>Chicha Ni Mang Juan Espesyal Sukat Sili 80's</td><td>26gx80</td><td class="price-cell">537.21</td></tr>
-                    <tr><td class="category-cell" data-category="Mang Juan">Mang Juan</td><td>Chicken Skin Ni Mang Juan 50's</td><td>70gx50</td><td class="price-cell">887.66</td></tr>
-                    <tr><td class="category-cell" data-category="Mang Juan">Mang Juan</td><td>Chicken Skin Ni Mang Juan 100's</td><td>16gx100</td><td class="price-cell">671.50</td></tr>
-                    <tr><td class="category-cell" data-category="Mang Juan">Mang Juan</td><td>Chicken Skin Ni Mang Juan Suka</td><td>16gx100</td><td class="price-cell">671.50</td></tr>
-                    <tr><td class="category-cell" data-category="Mang Juan">Mang Juan</td><td>Chicharron Ni Mang Juan Klasik Chicharron</td><td>26gx80</td><td class="price-cell">537.21</td></tr>
-                    <tr><td class="category-cell" data-category="Mang Juan">Mang Juan</td><td>Kropek Ni Mang Juan</td><td>22gx72</td><td class="price-cell">498.24</td></tr>
-                    <tr><td class="category-cell" data-category="Mang Juan">Mang Juan</td><td>Kropek Ni Mang Juan</td><td>80gx18</td><td class="price-cell">498.24</td></tr>
-                    <tr><td class="category-cell" data-category="Mang Juan">Mang Juan</td><td>Kropek Ni Mang Juan Sweet Chili Hipon 22g</td><td>22gx80</td><td class="price-cell">498.24</td></tr>
-                    <tr><td class="category-cell" data-category="Mang Juan">Mang Juan</td><td>Kropek Ni Mang Juan Sweet Chili Hipon 80g</td><td>80gx18</td><td class="price-cell">498.24</td></tr>
-                    <tr><td class="category-cell" data-category="Calbee">Calbee</td><td>Jnj Calbee Pot.Chips Chdr&Scrm 48S</td><td>28gx48</td><td class="price-cell">911.23</td></tr>
-                    <tr><td class="category-cell" data-category="Calbee">Calbee</td><td>Jnj Calbee Pot.Chips Clsc Sltd 48S</td><td>28gx48</td><td class="price-cell">911.23</td></tr>
-                    <tr><td class="category-cell" data-category="Calbee">Calbee</td><td>Jnj Calbee Pot.Chips Wasabi 48S</td><td>28gx48</td><td class="price-cell">911.23</td></tr>
-                    <tr><td class="category-cell" data-category="Calbee">Calbee</td><td>Jnj Calbee Pot.Chips Chdr&Scrm 12S</td><td>170gx12</td><td class="price-cell">1,304.35</td></tr>
-                    <tr><td class="category-cell" data-category="Calbee">Calbee</td><td>Jnj Calbee Pot.Chips Clsc Sltd 12S</td><td>170gx12</td><td class="price-cell">1,304.35</td></tr>
-                    <tr><td class="category-cell" data-category="Calbee">Calbee</td><td>Jnj Calbee Pot.Chips Wasabi 12S</td><td>170gx12</td><td class="price-cell">1,304.35</td></tr>
-                    <tr><td class="category-cell" data-category="Calbee">Calbee</td><td>Jnj-Calbee Pot.Chips Honey Btr 22gx80</td><td>22gx80</td><td class="price-cell">1,219.79</td></tr>
-                    <tr><td class="category-cell" data-category="Chippy">Chippy</td><td>Chippy Bbq</td><td>110gx50</td><td class="price-cell">1,174.23</td></tr>
-                    <tr><td class="category-cell" data-category="Chippy">Chippy</td><td>Chippy Chili & Cheese</td><td>110gx50</td><td class="price-cell">1,174.23</td></tr>
-                    <tr><td class="category-cell" data-category="Chippy">Chippy</td><td>Chippy Bbq</td><td>15gx100</td><td class="price-cell">671.50</td></tr>
-                    <tr><td class="category-cell" data-category="Chippy">Chippy</td><td>Chippy Chili & Cheese</td><td>15gx100</td><td class="price-cell">671.50</td></tr>
-                    <tr><td class="category-cell" data-category="Chippy">Chippy</td><td>Chippy Garlic And Vinegar 100's</td><td>30gx100</td><td class="price-cell">1,174.23</td></tr>
-                    <tr><td class="category-cell" data-category="Chippy">Chippy</td><td>Chippy Garlic And Vinegar 50's</td><td>15gx100</td><td class="price-cell">671.50</td></tr>
-                    <tr><td class="category-cell" data-category="Chippy">Chippy</td><td>Chippy Mild & Tasty 100's</td><td>27gx100</td><td class="price-cell">1,174.23</td></tr>
-                    <tr><td class="category-cell" data-category="Chippy">Chippy</td><td>Chippy Mild & Tasty 50's</td><td>13gx100</td><td class="price-cell">671.50</td></tr>
-                    <tr><td class="category-cell" data-category="Chiz Curls">Chiz Curls</td><td>Chiz Curls</td><td>18gx50</td><td class="price-cell">671.50</td></tr>
-                    <tr><td class="category-cell" data-category="Chiz Curls">Chiz Curls</td><td>Chiz Curls</td><td>18gx100</td><td class="price-cell">671.50</td></tr>
-                    <tr><td class="category-cell" data-category="Mr. Chips">Mr. Chips</td><td>Mr. Chips Cheese</td><td>26gx100</td><td class="price-cell">546.73</td></tr>
-                    <tr><td class="category-cell" data-category="Mr. Chips">Mr. Chips</td><td>Mr. Chips Cheese</td><td>105gx50</td><td class="price-cell">1,040.70</td></tr>
-                    <tr><td class="category-cell" data-category="Mr. Chips">Mr. Chips</td><td>Mr. Chips Mais</td><td>45gx54</td><td class="price-cell">403.38</td></tr>
-                    <tr><td class="category-cell" data-category="Mr. Chips">Mr. Chips</td><td>Mr. Chips Mais</td><td>110gx40</td><td class="price-cell">887.66</td></tr>
-                    <!-- Reverted Nova snack rows to original state and position -->
-                    <tr><td class="category-cell" data-category="Nova">Nova</td><td>Nova Country Cheddar</td><td>78gx50</td><td class="price-cell">1,174.23</td></tr>
-                    <tr><td class="category-cell" data-category="Nova">Nova</td><td>Nova Country Cheddar</td><td>26gx100</td><td class="price-cell">671.50</td></tr>
-                    <tr><td class="category-cell" data-category="Nova">Nova</td><td>Nova Multigrain Snacks</td><td>26gx100</td><td class="price-cell">671.50</td></tr>
-                    <tr><td class="category-cell" data-category="Nova">Nova</td><td>Nova Multigrain Snacks</td><td>78gx50</td><td class="price-cell">1,174.23</td></tr>
-                    <!-- Added Piattos and related snacks rows -->
-                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Sour & Cream</td><td>85gx50</td><td class="price-cell">1,579.76</td></tr>
-                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Cheese</td><td>40gx80</td><td class="price-cell">1,209.88</td></tr>
-                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Cheese</td><td>85gx50</td><td class="price-cell">1,579.76</td></tr>
-                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Cheese Supersize</td><td>170gx18</td><td class="price-cell">1,108.24</td></tr>
-                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Sour & Cream Supersize</td><td>170gx18</td><td class="price-cell">1,108.24</td></tr>
-                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Nacho Pizza</td><td>40gx80</td><td class="price-cell">1,209.88</td></tr>
-                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Nacho Pizza</td><td>85gx50</td><td class="price-cell">1,579.76</td></tr>
-                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Roadhouse Bbq</td><td>40gx80</td><td class="price-cell">1,209.88</td></tr>
-                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Roadhouse Bbq</td><td>85gx50</td><td class="price-cell">1,579.76</td></tr>
-                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Roasted Beef 80's</td><td>25gx80</td><td class="price-cell">1,209.88</td></tr>
-                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Roasted Beef 50's</td><td>25gx50</td><td class="price-cell">1,209.88</td></tr>
-                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Salted Potato 80's</td><td>45gx80</td><td class="price-cell">1,209.88</td></tr>
-                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Salted Potato 50's</td><td>45gx50</td><td class="price-cell">1,209.88</td></tr>
-                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos spicy cheese</td><td>40gx80</td><td class="price-cell">1,209.88</td></tr>
-                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos spicy cheese</td><td>85gx50</td><td class="price-cell">1,579.76</td></tr>
-                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Truffle Cream</td><td>40gx80</td><td class="price-cell">1,209.88</td></tr>
-                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Truffle Cream</td><td>85gx50</td><td class="price-cell">1,579.76</td></tr>
-                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Beef Bulgogi</td><td>40gx80</td><td class="price-cell">1,628.36</td></tr>
-                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Beef Bulgogi</td><td>85gx50</td><td class="price-cell">1,628.36</td></tr>
-                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Four Cheese</td><td>40gx80</td><td class="price-cell">1,636.36</td></tr>
-                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Four Cheese</td><td>85gx50</td><td class="price-cell">1,636.36</td></tr>
-                    <tr><td class="category-cell" data-category="Piattos">Piattos</td><td>Piattos Four Cheese Supersized</td><td>170gx18</td><td class="price-cell">1,145.43</td></tr>
-                    <tr><td class="category-cell" data-category="Pic-A">Pic-A</td><td>Pic-A Ultimate Cheddar Mix</td><td>180gx18</td><td class="price-cell">923.44</td></tr>
-                    <tr><td class="category-cell" data-category="Pic-A">Pic-A</td><td>Pic-A Bbq Overload Sncks Mix</td><td>170gx18</td><td class="price-cell">1,108.24</td></tr>
-                    <tr><td class="category-cell" data-category="Pic-A">Pic-A</td><td>Pic-A Ultimate Cheddar Snack Mix 50's</td><td>50's</td><td class="price-cell">1,578.98</td></tr>
-                    <tr><td class="category-cell" data-category="Pic-A">Pic-A</td><td>Pic-A Bbq Overload Snack Mix 50s</td><td>50's</td><td class="price-cell">1,578.98</td></tr>
-                    <tr><td class="category-cell" data-category="Pic-A">Pic-A</td><td>Pic-A Sweet chili 18's</td><td>170gx18</td><td class="price-cell">923.44</td></tr>
-                    <tr><td class="category-cell" data-category="Potato Chips">Potato Chips</td><td>Potato Chips Bbq</td><td>25gx80</td><td class="price-cell">1,209.88</td></tr>
-                    <tr><td class="category-cell" data-category="Potato Chips">Potato Chips</td><td>Potato Chips Bbq</td><td>65gx50</td><td class="price-cell">1,716.01</td></tr>
-                    <tr><td class="category-cell" data-category="Potato Chips">Potato Chips</td><td>Potato Chips Bbq 18's</td><td>130gx18</td><td class="price-cell">1,319.58</td></tr>
-                    <tr><td class="category-cell" data-category="Potato Chips">Potato Chips</td><td>Pot.Chips Plain Salted 22gx80</td><td>22gx80</td><td class="price-cell">1,203.66</td></tr>
-                    <tr><td class="category-cell" data-category="Potato Chips">Potato Chips</td><td>Pot.Chips Plain Salted 60gx50</td><td>60gx50</td><td class="price-cell">1,716.01</td></tr>
-                    <tr><td class="category-cell" data-category="Potato Chips">Potato Chips</td><td>Pot.Chips Plain Salted 18's</td><td>130gx18</td><td class="price-cell">1,319.58</td></tr>
-                    <tr><td class="category-cell" data-category="Potato Chips">Potato Chips</td><td>Potato Chips Sour Cream 80S</td><td>25gx80</td><td class="price-cell">1,209.88</td></tr>
-                    <tr><td class="category-cell" data-category="Potato Chips">Potato Chips</td><td>Potato Chips Sour Cream 50'S</td><td>50's</td><td class="price-cell">1,716.01</td></tr>
-                    <tr><td class="category-cell" data-category="Calbee">Calbee</td><td>Jnj Calbee Pot. Chips Honey Butter 60G</td><td>60gx24</td><td class="price-cell">671.24</td></tr>
-                    <tr><td class="category-cell" data-category="Calbee">Calbee</td><td>Jnj Calbee Pot. Chips Honey Butter 170G</td><td>170gx12</td><td class="price-cell">1,304.35</td></tr>
-                    <tr><td class="category-cell" data-category="Ripples">Ripples</td><td>Ripples Sour Cream & Onion</td><td>124gx12</td><td class="price-cell">1,304.35</td></tr>
-                    <tr><td class="category-cell" data-category="Ripples">Ripples</td><td>Ripples Nori</td><td>124gx12</td><td class="price-cell">1,304.35</td></tr>
-                    <tr><td class="category-cell" data-category="Roller Coaster">Roller Coaster</td><td>Roller Coaster Cheese</td><td>85gx50</td><td class="price-cell">1,134.22</td></tr>
-                    <tr><td class="category-cell" data-category="Roller Coaster">Roller Coaster</td><td>Roller Coaster Bbq 100's</td><td>20gx100</td><td class="price-cell">671.24</td></tr>
-                    <tr><td class="category-cell" data-category="Roller Coaster">Roller Coaster</td><td>Roller Coaster Bbq 50's</td><td>85gx50</td><td class="price-cell">1,134.22</td></tr>
-                    <tr><td class="category-cell" data-category="Tortillos">Tortillos</td><td>Tortillos Bbq</td><td>25gx100</td><td class="price-cell">2,247.45</td></tr>
-                    <tr><td class="category-cell" data-category="Tortillos">Tortillos</td><td>Tortillos Bbq</td><td>16gx90</td><td class="price-cell">1,295.02</td></tr>
-                    <tr><td class="category-cell" data-category="Tortillos">Tortillos</td><td>Tortillos Bbq</td><td>160gx36</td><td class="price-cell">1,657.02</td></tr>
-                    <tr><td class="category-cell" data-category="Tortillos">Tortillos</td><td>Tortillos Cheese</td><td>100gx50</td><td class="price-cell">1,257.26</td></tr>
-                    <tr><td class="category-cell" data-category="Tortillos">Tortillos</td><td>Tortillos Cheese</td><td>25gx100</td><td class="price-cell">1,173.93</td></tr>
-                    <tr><td class="category-cell" data-category="Tortillos">Tortillos</td><td>Tortillos Cheese</td><td>100gx50</td><td class="price-cell">1,257.26</td></tr>
-                    <tr><td class="category-cell" data-category="Tortillos">Tortillos</td><td>Tortillps Chili</td><td>100gx50</td><td class="price-cell">1,173.93</td></tr>
+                    <!-- Snacks categories and products -->
+                    <!-- Mang Juan -->
+                    <tr class="category-row">
+                      <td rowspan="1" class="category-cell" data-category="Mang Juan">MANG JUAN</td>
+                      <td>Mang Juan Chili Garlic 70g</td>
+                      <td>70g x 24</td>
+                      <td class="price-cell">₱252.00</td>
+                    </tr>
+                    
+                    <!-- Calbee -->
+                    <tr class="category-row">
+                      <td rowspan="1" class="category-cell" data-category="Calbee">CALBEE</td>
+                      <td>Calbee Honey Butter Chips 60g</td>
+                      <td>60g x 24</td>
+                      <td class="price-cell">₱384.00</td>
+                    </tr>
+                    
+                    <!-- Chippy -->
+                    <tr class="category-row">
+                      <td rowspan="1" class="category-cell" data-category="Chippy">CHIPPY</td>
+                      <td>Chippy Barbecue 60g</td>
+                      <td>60g x 24</td>
+                      <td class="price-cell">₱276.00</td>
+                    </tr>
+                    
+                    <!-- Chiz Curls -->
+                    <tr class="category-row">
+                      <td rowspan="1" class="category-cell" data-category="Chiz Curls">CHIZ CURLS</td>
+                      <td>Chiz Curls Cheese 70g</td>
+                      <td>70g x 24</td>
+                      <td class="price-cell">₱294.00</td>
+                    </tr>
+                    
+                    <!-- Mr. Chips -->
+                    <tr class="category-row">
+                      <td rowspan="1" class="category-cell" data-category="Mr. Chips">MR. CHIPS</td>
+                      <td>Mr. Chips Classic 60g</td>
+                      <td>60g x 24</td>
+                      <td class="price-cell">₱276.00</td>
+                    </tr>
+                    
+                    <!-- Nova -->
+                    <tr class="category-row">
+                      <td rowspan="1" class="category-cell" data-category="Nova">NOVA</td>
+                      <td>Nova Cheese 50g</td>
+                      <td>50g x 24</td>
+                      <td class="price-cell">₱240.00</td>
+                    </tr>
+                    
+                    <!-- Piattos -->
+                    <tr class="category-row">
+                      <td rowspan="1" class="category-cell" data-category="Piattos">PIATTOS</td>
+                      <td>Piattos Sour Cream & Onion 60g</td>
+                      <td>60g x 24</td>
+                      <td class="price-cell">₱276.00</td>
+                    </tr>
+                    
+                    <!-- Pic-A -->
+                    <tr class="category-row">
+                      <td rowspan="1" class="category-cell" data-category="Pic-A">PIC-A</td>
+                      <td>Pic-A Cheese 50g</td>
+                      <td>50g x 24</td>
+                      <td class="price-cell">₱240.00</td>
+                    </tr>
+                    
+                    <!-- Potato Chips -->
+                    <tr class="category-row">
+                      <td rowspan="1" class="category-cell" data-category="Potato Chips">POTATO CHIPS</td>
+                      <td>Classic Potato Chips 60g</td>
+                      <td>60g x 24</td>
+                      <td class="price-cell">₱276.00</td>
+                    </tr>
+                    
+                    <!-- Ripples -->
+                    <tr class="category-row">
+                      <td rowspan="1" class="category-cell" data-category="Ripples">RIPPLES</td>
+                      <td>Ripples Cheese 60g</td>
+                      <td>60g x 24</td>
+                      <td class="price-cell">₱276.00</td>
+                    </tr>
+                    
+                    <!-- Roller Coaster -->
+                    <tr class="category-row">
+                      <td rowspan="1" class="category-cell" data-category="Roller Coaster">ROLLER COASTER</td>
+                      <td>Roller Coaster Cheese 60g</td>
+                      <td>60g x 24</td>
+                      <td class="price-cell">₱276.00</td>
+                    </tr>
+                    
+                    <!-- Tortillos -->
+                    <tr class="category-row">
+                      <td rowspan="1" class="category-cell" data-category="Tortillos">TORTILLOS</td>
+                      <td>Tortillos Cheese 60g</td>
+                      <td>60g x 24</td>
+                      <td class="price-cell">₱276.00</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- Canned Goods Tab -->
+            <div class="tab-panel" id="canned-tab" style="display:none;">
+              <div class="modern-table-container">
+                <table class="modern-products-table responsive-table">
+                  <thead>
+                    <tr>
+                      <th>Category</th>
+                      <th>Product Description</th>
+                      <th>Packing</th>
+                      <th>Price (per case)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="category-row">
+                      <td rowspan="3" class="category-cell" style="background:#fff8e1; color:#b26a00; font-weight:bold;">CANNED GOODS</td>
+                      <td>Maling chicken 168</td>
+                      <td>397gx24</td>
+                      <td class="price-cell">₱1,550.00</td>
+                    </tr>
+                    <tr>
+                      <td>Maling chicken 168</td>
+                      <td>200gx36</td>
+                      <td class="price-cell">₱1,650.00</td>
+                    </tr>
+                    <tr>
+                      <td>Liver spread 168</td>
+                      <td>100gx48</td>
+                      <td class="price-cell">₱1,250.00</td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
