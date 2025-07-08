@@ -139,54 +139,75 @@
   z-index: 2;
 }
 .aesthetic-collage {
-  flex: 0 0 370px;
-  min-width: 240px;
+  flex: 0 0 470px;
+  min-width: 340px;
+  max-width: 600px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 22px;
+  grid-gap: 32px;
   align-items: center;
   justify-items: center;
   position: relative;
   margin: 0 auto;
-  background: #f7fbff;
-  border-radius: 1.7em;
-  box-shadow: 0 4px 24px rgba(21,101,192,0.13);
-  padding: 1.6em 1.2em 1.2em 1.2em;
-  border: 1.5px solid #e3f2fd;
+  background: linear-gradient(135deg, #fffde7 60%, #e3f2fd 100%);
+  border-radius: 3.5em;
+  box-shadow: 0 12px 48px rgba(21,101,192,0.13), 0 4px 24px rgba(255,224,102,0.13);
+  padding: 3.5em 2.5em 2.5em 2.5em;
+  border: 3.5px solid #ffe066;
+  overflow: hidden;
 }
 .aesthetic-collage img {
   width: 110px;
   height: 110px;
-  object-fit: cover;
+  object-fit: contain;
+  background-color: #fff;
   border-radius: 22px;
-  box-shadow: 0 4px 18px rgba(21,101,192,0.13);
-  border: 2px solid #e3f2fd;
-  transition: transform 0.25s cubic-bezier(.23,1.01,.32,1), box-shadow 0.25s;
+  box-shadow: 0 4px 18px rgba(21,101,192,0.13), 0 0 0 6px #ffe06622;
+  border: 2.5px solid #e3f2fd;
+  transition: transform 0.25s cubic-bezier(.23,1.01,.32,1), box-shadow 0.25s, z-index 0.2s;
   cursor: pointer;
   background: #fff;
   position: relative;
+  z-index: 1;
 }
-.aesthetic-collage img:nth-child(2), .aesthetic-collage img:nth-child(6) { margin-top: 18px; }
-.aesthetic-collage img:nth-child(3), .aesthetic-collage img:nth-child(7) { margin-bottom: 18px; }
-.aesthetic-collage img:nth-child(even) { width: 85px; height: 85px; }
+.aesthetic-collage img.img1 { transform: rotate(-8deg) scale(1.08); z-index: 2; box-shadow: 0 8px 32px #ffe06655, 0 2px 12px #43ea7a44, 0 0 0 8px #ffe06622; }
+.aesthetic-collage img.img5 { transform: rotate(7deg) scale(1.10); z-index: 3; box-shadow: 0 8px 32px #43ea7a33, 0 2px 12px #ffe06644, 0 0 0 8px #43ea7a22; }
+.aesthetic-collage img.img7 { transform: rotate(-6deg) scale(1.09); z-index: 2; box-shadow: 0 8px 32px #ffe06633, 0 2px 12px #43ea7a33, 0 0 0 8px #ffe06622; }
+.aesthetic-collage img.img8 { transform: rotate(5deg) scale(1.07); z-index: 2; box-shadow: 0 8px 32px #43ea7a33, 0 2px 12px #ffe06633, 0 0 0 8px #43ea7a22; }
+.aesthetic-collage img.img1,
+        .aesthetic-collage img.img5,
+        .aesthetic-collage img.img7,
+        .aesthetic-collage img.img8 {
+          width: 140px;
+          height: 140px;
+          border: 3.5px solid #ffe066;
+        }
+        .aesthetic-collage img:nth-child(2), .aesthetic-collage img:nth-child(6) { margin-top: 28px; }
+.aesthetic-collage img:nth-child(3), .aesthetic-collage img:nth-child(7) { margin-bottom: 28px; }
+.aesthetic-collage img:nth-child(even) { width: 95px; height: 95px; }
 .aesthetic-collage img:hover {
-  transform: scale(1.13) rotate(-2deg);
-  box-shadow:0 12px 32px rgba(21,101,192,0.22);
-  z-index:2;
+  transform: scale(1.18) rotate(-2deg) !important;
+  box-shadow: 0 16px 48px #ffe06666, 0 4px 24px #43ea7a66, 0 0 0 12px #ffe06633;
+  border-color: #43ea7a;
+  z-index: 5;
 }
-@media (min-width: 700px) {
-  .aesthetic-collage {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (max-width: 900px) {
-  .aesthetic-collage {
-    margin: 0 auto;
-  }
-}
-@media (max-width: 700px) {
-  .aesthetic-collage { grid-template-columns:repeat(2, 1fr)!important; }
-}
+        @media (max-width: 900px) {
+          .aesthetic-collage {
+            min-width: 98vw;
+            max-width: 98vw;
+            padding: 1.5em 0.5em 1.5em 0.5em;
+            border-radius: 2em;
+            grid-gap: 18px;
+          }
+          .aesthetic-collage img.img1,
+          .aesthetic-collage img.img5,
+          .aesthetic-collage img.img7,
+          .aesthetic-collage img.img8 {
+            width: 110px;
+            height: 110px;
+          }
+          .aesthetic-collage img { width: 85px; height: 85px; }
+        }
 .gradient-text {
           background: linear-gradient(90deg, #43a047 0%, #fbc02d 100%);
           -webkit-background-clip: text;
@@ -211,13 +232,13 @@
               <a href="products.html" class="cta button legacy-cta">See Our Products <i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="legacy-collage aesthetic-collage">
-              <img src="img/download%20(1).jpg" alt="Product 1" class="img1">
+              <img src="img/maling4.jpg" alt="Product 1" class="img1">
               <img src="img/download%20(2).jpg" alt="Product 2" class="img2">
-              <img src="img/c2-drinks.jpg" alt="C2 Drinks" class="img3">
+              <img src="img/maling5.jpg" alt="C2 Drinks" class="img3">
               <img src="img/download.jpg" alt="Product 3" class="img4">
-              <img src="img/piattos-variety.jpg" alt="Piattos Variety" class="img5">
+              <img src="img/maling2.jpg" alt="Piattos Variety" class="img5">
               <img src="img/pic-a-snack.jpg" alt="Pic-a-Snack" class="img6">
-              <img src="img/vitasoy-bottles.jpg" alt="Vitasoy Bottles" class="img7">
+              <img src="img/maling3.jpg" alt="Vitasoy Bottles" class="img7">
               <img src="img/blue-water.jpg" alt="Blue Water" class="img8">
               <img src="img/maling.jpg" alt="Blue Water" class="img8">
             </div>
